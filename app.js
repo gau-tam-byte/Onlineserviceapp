@@ -36,18 +36,18 @@ app.use(passport.session())
 app.use('/',require('./routes/index'))
 app.use('/',require('./routes/users'))
 
-// app.use(express.static(path.join(__dirname, './client')))
+app.use(express.static(path.join(__dirname, './client')))
 
-// app.get('*', (req,res)=>{
-//   res.sendFile(path.join(__dirname,'./client/build/index.html'))
-// })
+app.get('*', (req,res)=>{
+  res.sendFile(path.join(__dirname,'./client/build/index.html'))
+})
 
-if (process.env.NODE_ENV === 'production') {
-  //*Set static folder up in production
-  app.use(express.static('client/build'));
+// if (process.env.NODE_ENV === 'production') {
+//   //*Set static folder up in production
+//   app.use(express.static('client/build'));
 
-  app.get('*', (req,res) => res.sendFile(path.resolve(__dirname, 'client', 'build','index.html')));
-}
+//   app.get('*', (req,res) => res.sendFile(path.resolve(__dirname, 'client', 'build','index.html')));
+// }
 
 const port = process.env.PORT
 app.listen(port, () => console.log('Server started listening on port 5000!' ,{port}))
