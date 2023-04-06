@@ -6,7 +6,7 @@ const passport = require('passport');
 require('../Backend/db/dbconnection');
 const dotenv = require('dotenv')
 dotenv.config({path:'./config.env'})
-const path = require('path')
+// const path = require('path')
 // const mongoose = require('mongoose');
 // const morgan = require('morgan')
 // const expressHandlerbars = require('express-handlebars')
