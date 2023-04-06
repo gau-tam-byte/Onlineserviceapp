@@ -3,7 +3,7 @@ const path = require('path');
 const cookieparser = require('cookie-parser');
 const session = require('express-session')
 const passport = require('passport');
-require('../Backend/db/dbconnection');
+// require('../Backend/db/dbconnection');
 const dotenv = require('dotenv')
 dotenv.config({path:'./config.env'})
 const mongoose = require('mongoose')
