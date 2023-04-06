@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const cookieparser = require('cookie-parser');
-const session = require('express-session')
+// const session = require('express-session')
 const passport = require('passport');
 // require('../Backend/db/dbconnection');
 const dotenv = require('dotenv')
@@ -49,10 +49,10 @@ app.use(passport.initialize())
 app.use('/',require('./routes/index'))
 app.use('/',require('./routes/users'))
 
-app.use(express.static(path.join(__dirname, "client")))
+app.use(express.static(path.join(__dirname, "./client")))
 
 app.get('*', (req,res)=>{
-  res.sendFile(path.resolve(__dirname,'client','build' ,'index.html'))
+  res.sendFile(path.join(__dirname,'./client/build/index.html'))
 })
 
 // if (process.env.NODE_ENV === 'production') {
