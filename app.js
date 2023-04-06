@@ -33,15 +33,15 @@ const app = express()
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieparser())
-app.use(session({
-  cookie: { maxAge: 1000000 },
-  secret: 'connect.sid',
-  saveUninitialized: true,
-  resave: false,
-}));
+// app.use(session({
+//   cookie: { maxAge: 1000000 },
+//   secret: 'connect.sid',
+//   saveUninitialized: true,
+//   resave: false,
+// }));
 
 app.use(passport.initialize())
-app.use(passport.session())
+// app.use(passport.session())
 
 
 
@@ -52,7 +52,7 @@ app.use('/',require('./routes/users'))
 app.use(express.static(path.join(__dirname, "client")))
 
 app.get('*', (req,res)=>{
-  res.sendFile(path.resolve(__dirname,'client/build/index.html'))
+  res.sendFile(path.resolve(__dirname,'client','build' ,'index.html'))
 })
 
 // if (process.env.NODE_ENV === 'production') {
