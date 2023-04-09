@@ -100,12 +100,12 @@ router.post('/Reqser',auth, async (req,res)=>{
 
 })
 
-router.get('/AboutMe',auth,(req,res)=>{
+router.get('/aboutme',auth,(req,res)=>{
   console.log("hello from about us page")
   res.send(req.rootuser)
 })
 
-router.get('/UserRequests', auth, (req,res)=>{
+router.get('/userrequests', auth, (req,res)=>{
   // try {
   //   const requests = await User.findOne({_id : req.body._id})   
   //   if(!requests){

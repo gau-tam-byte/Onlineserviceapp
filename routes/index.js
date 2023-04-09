@@ -61,7 +61,7 @@ router.post('/agentlogin',async(req,res,next)=>{
 })
 
 
-router.get('/Serreqs',agentauth,(req,res)=>{
+router.get('/serreqs',agentauth,(req,res)=>{
  
 
 
@@ -70,7 +70,7 @@ router.get('/Serreqs',agentauth,(req,res)=>{
   
 })
 
-router.get('/AboutAgent',agentauth,(req,res)=>{
+router.get('/aboutagent',agentauth,(req,res)=>{
   res.send(req.AgentData)
 })
 
