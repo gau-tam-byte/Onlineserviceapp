@@ -36,7 +36,7 @@ function App() {
       <Route path='/AgentLogin' element={<AgentLogin/>}></Route>
       <Route path='/AgentLogout' element={<AgentLogout/>}></Route>
       <Route path='/Serreqs' element={<Serreqs/>}></Route>
-      <Route path='/ReqofuserRequests' element={<AgentPendingRequests/>}></Route>
+      <Route path='/AgentPendingRequests' element={<AgentPendingRequests/>}></Route>
     </Routes>
    
     </>
