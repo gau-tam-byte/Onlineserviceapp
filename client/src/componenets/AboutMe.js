@@ -13,7 +13,7 @@ const AboutMe = () => {
   const [userData, seruserData] = useState({})
   const callaboutuspage = async ()=>{
     try {
-      const res = await fetch('/AboutMe',{
+      const res = await fetch('/aboutme',{
         method:"GET",
         headers:{
           Accept:"application/json",

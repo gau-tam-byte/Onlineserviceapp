@@ -17,7 +17,7 @@ const UserRequests =() =>{
   const [arrofobj, setarrofobj] = useState({arr:[]})
   const userrequests = async()=>{
     try {
-      const res = await fetch('/UserRequests',{
+      const res = await fetch('/userrequests',{
         method:"GET",
           headers:{
             Accept:"application/json",

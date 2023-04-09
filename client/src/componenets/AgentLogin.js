@@ -36,7 +36,7 @@ function AgentLogin() {
     if(res.status === 400 || !data){
       window.alert("unSuccess Login/ Invalid Credentials")
       console.log('unSucess Login')
-      naviagatee('/Login')
+      naviagatee('/AgentLogin')
     }else{
       window.alert("Login successfull!")
       console.log('Login successfull!')

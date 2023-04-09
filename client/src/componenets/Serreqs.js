@@ -29,7 +29,7 @@ const Serreqs = () => {
 
   const callpage = async () => {
     try {
-      const res = await fetch('/Serreqs', {
+      const res = await fetch('/serreqs', {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -49,7 +49,7 @@ const Serreqs = () => {
 
   const callabtagent = async () => {
     try {
-      const resagent = await fetch('/AboutAgent', {
+      const resagent = await fetch('/aboutagent', {
         method: 'GET',
         headers: {
           Accept: "application/json",
@@ -58,9 +58,9 @@ const Serreqs = () => {
         credentials: "include"
       })
       const dataagent = await resagent.json()
-      console.log(dataagent)
+     
       seruserData({ ...userData, Profession: dataagent.Profession ,name: dataagent.name, Phone: dataagent.Phone, email:"",descc:"", Status:"" })
-      console.log(userData)
+   
     } catch (error) {
       console.log(error)
       naviii('/AgentLogin')
@@ -100,10 +100,10 @@ const Serreqs = () => {
     await fetch('/updsta', {
       method: "PUT",
       headers:{
-        // Accept: "application/json",
+        Accept: "application/json",
         "Content-type":"application/json",
-
       },
+      credentials:"include",
       body: JSON.stringify({ email, descc, Status,name ,Profession,Phone })
 
 

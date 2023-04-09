@@ -11,7 +11,7 @@ const mongoose = require('mongoose')
 dotenv.config({path:'./config.env'})
 // const mongoose = require('mongoose')
 
-const db = process.env.DATABASE
+const db = 'mongodb+srv://goutamkrk:ank0NyAORK4iD4nX@cluster.dkz4ywb.mongodb.net/test?retryWrites=true&w=majority'
 // const db = 'mongodb://127.0.0.1:27017/?directConnection=true';
 mongoose.connect(db).then(()=>{
   console.log("connection success")
