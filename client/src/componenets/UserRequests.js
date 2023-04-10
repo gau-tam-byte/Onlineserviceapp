@@ -10,10 +10,6 @@ import { Link } from 'react-router-dom';
 
 const UserRequests =() =>{
 
-  useEffect(() => {
-    userrequests()
-  },[])
-
   const [arrofobj, setarrofobj] = useState({arr:[]})
   const userrequests = async()=>{
     try {
@@ -34,6 +30,10 @@ const UserRequests =() =>{
     }
 
   }
+
+  useEffect(() => {
+    userrequests()
+  },[])
 
   return (
   <>

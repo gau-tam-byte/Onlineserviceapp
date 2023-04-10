@@ -34,7 +34,7 @@ function AgentPendingRequests() {
 
   }
 
-  const agentdetail = async()=>{
+  const agentdetail = async () =>{
 
     const ress = await fetch("/agentpro",{
       method:"GET",

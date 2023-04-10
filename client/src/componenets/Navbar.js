@@ -22,7 +22,7 @@ const Navbarr = () => {
    <>
        <Navbar style={{border:'3px solid '}} expand="lg" bg="dark" variant="dark" className='rounded mt-2 mr-2 ml-2 mb-2' collapseOnSelect>
         <Container>
-        <Navbar.Brand ><Link className="text-decoration-none text-white pl-1" to="/">Online Service Provider</Link></Navbar.Brand>
+        <Navbar.Brand ><Link eventKey="10" className="text-decoration-none text-white pl-1" to="/">Online Service Provider</Link></Navbar.Brand>
         <Navbar.Toggle variant="white" aria-expanded="false" aria-controls="responsive-navbar-nav" className='navbar-toggler mr-1'/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -31,6 +31,9 @@ const Navbarr = () => {
 
             <Nav.Link eventKey="2"><Link className="text-decoration-none text-white pl-1" to="/Reqser">Request a Service</Link></Nav.Link>
             {/* <Nav.Link ><Link className="text-decoration-none text-white pl-1" to="/Serreqs">Requested Service By User</Link></Nav.Link> */}
+
+            <Nav.Link eventKey="9"><Link className="text-decoration-none text-white pl-1" to="/UserRequests">Your Requests</Link></Nav.Link>
+
 
             
           </Nav>

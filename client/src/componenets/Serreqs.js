@@ -148,7 +148,7 @@ const Serreqs = () => {
     < >
       <div style={{ backgroundImage: `url(${bgg})`, backgroundSize: 'cover', height:"auto" }} className="mr-2 ml-2 pb-2 mb-2 rounded">
       <div className='pt-2 ml-2'>
-      <Link  to='/ReqofuserRequests'>Service Requests Accepted by You</Link>
+      <Link  to='/AgentPendingRequests'>Service Requests Accepted by You</Link>
       </div>
         {/* <div>This is where all the Service Requested are shown to agents ➡️ Build Under Construction</div> */}
 
@@ -168,7 +168,7 @@ const Serreqs = () => {
 
                         {/* className='mr-3 ml-3' */}
                         <div style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', height: "auto" }} className="pr-2 pl-2 pb-2 mr-2 ml-2 mt-2 mb-2  rounded">
-                          <Form>
+                          <Form method='PUT'>
                             <Row className="mb-3">
                               <Form.Group as={Col} controlId="formGridName">
                                 <Form.Label >{<SiNamecheap />} Client Name</Form.Label>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
@@ -7,7 +7,7 @@ import bg from '../images/c.png'
 import bgg from '../images/cool.png'
 import {FiMail,FiSmartphone,FiUser,FiKey} from "react-icons/fi";
 import {AiOutlineProfile} from "react-icons/ai";
-import {MdHomeRepairService} from "react-icons/md";
+// import {MdHomeRepairService} from "react-icons/md";
 const AboutMe = () => {
   const Navigates = useNavigate()
   const [userData, seruserData] = useState({})
@@ -46,7 +46,7 @@ const AboutMe = () => {
 
       <div className="container md-12 mt-5 rounded" style={{border:'1px solid black',backgroundImage:`url(${bgg})`,backgroundSize: 'cover'}}>
         <h1 className='pb-2'>{<AiOutlineProfile/>} Profile</h1>
-    <form method="GET">
+    <form>
         <div className='row'> 
             <div className='col-md-12'>
                 <h5>Name - {userData.name}</h5>
@@ -95,9 +95,9 @@ const AboutMe = () => {
             </div>
         </div>
     </form>
-    <div className='pt-3'>
+    {/* <div className='pt-3'>
       <Link  to='/UserRequests'>{<MdHomeRepairService/>} Your Service Requests</Link>
-    </div>
+    </div> */}
     </div>
       </Col>
     </Row>
