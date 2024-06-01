@@ -47,7 +47,7 @@ const Landingpage = () => {
       <hr/>
 
       <footer>
-        <p>&copy; 2023 B Tech Project by Venkata Shriya Pydimarri, Inc.</p>
+        <p>&copy; 2023 BCA Project by Koruprolu Goutam Kumar, Inc.</p>
       </footer>
     </div> 
     {/* <!-- /container --> */}
